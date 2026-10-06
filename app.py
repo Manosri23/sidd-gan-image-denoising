@@ -28,6 +28,7 @@ try:
     st.success("GAN model loaded successfully!")
 except Exception as e:
     st.error("Model could not be loaded.")
+    st.exception(e)
     st.stop()
 
 # Upload image
